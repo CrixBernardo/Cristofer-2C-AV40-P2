@@ -8,19 +8,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Calculadora de Combinações</h1>
-    <p>Digite o valor de <em>n</em> e <em>p</em> para calcular C(n, p):</p>
+    <div class="container">
+        <h1>Calculadora de Combinações</h1>
+        <p>Digite o valor de <em>n</em> e <em>p</em> para calcular C(n, p):</p>
 
-    <!-- Campos de entrada para n e p -->
-    <input type="number" id="n" placeholder="Valor de n" min="0">
-    <input type="number" id="p" placeholder="Valor de p" min="0">
+        <!-- Campos de entrada para n e p -->
+        <input type="number" id="n" placeholder="Valor de n" min="0">
+        <input type="number" id="p" placeholder="Valor de p" min="0">
 
-    <br>
-    <!-- Botão para calcular a combinação -->
-    <button onclick="calcularCombinacao()">Calcular Combinação</button>
+        <!-- Botão para calcular a combinação -->
+        <button onclick="calcularCombinacao()">Calcular Combinação</button>
 
-    <!-- Área para exibir o resultado -->
-    <div class="resultado" id="resultado"></div>
+        <!-- Área para exibir o resultado -->
+        <div class="resultado" id="resultado"></div>
+    </div>
 
     <!-- Link para o arquivo JavaScript -->
     <script src="script.js"></script>
