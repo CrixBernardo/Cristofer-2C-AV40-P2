@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Combinações</title>
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora de Combinações</h1>
+    <p>Digite o valor de <em>n</em> e <em>p</em> para calcular C(n, p):</p>
+
+    <!-- Campos de entrada para n e p -->
+    <input type="number" id="n" placeholder="Valor de n" min="0">
+    <input type="number" id="p" placeholder="Valor de p" min="0">
+
+    <br>
+    <!-- Botão para calcular a combinação -->
+    <button onclick="calcularCombinacao()">Calcular Combinação</button>
+
+    <!-- Área para exibir o resultado -->
+    <div class="resultado" id="resultado"></div>
+
+    <!-- Link para o arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
