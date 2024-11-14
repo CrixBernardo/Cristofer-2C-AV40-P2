@@ -6,7 +6,7 @@ function calcularCombinacao() {
     // Validação dos valores
     if (isNaN(n) || isNaN(p) || n < 0 || p < 0 || p > n) {
         resultadoElemento.innerText = "Por favor, insira valores válidos para n e p (p ≤ n).";
-        resultadoElemento.style.color = "#e63946";
+        resultadoElemento.style.color = "#e63946";  // Cor de erro (vermelho)
         resultadoElemento.classList.add("show");
         return;
     }
@@ -18,6 +18,6 @@ function calcularCombinacao() {
     const combinacao = fatorial(n) / (fatorial(p) * fatorial(n - p));
 
     resultadoElemento.innerText = `C(${n}, ${p}) = ${combinacao}`;
-    resultadoElemento.style.color = "#333";
-    resultadoElemento.classList.add("show");
+    resultadoElemento.style.color = "#333"; // Cor normal
+    resultadoElemento.classList.add("show"); // Exibe o resultado
 }
