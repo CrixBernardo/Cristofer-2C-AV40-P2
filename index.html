@@ -12,20 +12,18 @@
 <body>
     <div class="container">
         <h1>Calculadora de Combinações</h1>
-        <p>Digite os valores de <em>n</em> e <em>p</em> para calcular <strong>C(n, p)</strong>:</p>
+        <p class="intro-text">Digite os valores de <em>n</em> e <em>p</em> para calcular <strong>C(n, p)</strong>:</p>
 
-        <!-- Campos de entrada para n e p -->
-        <input type="number" id="n" placeholder="Valor de n" min="0">
-        <input type="number" id="p" placeholder="Valor de p" min="0">
+        <div class="inputs">
+            <input type="number" id="n" placeholder="Valor de n" min="0">
+            <input type="number" id="p" placeholder="Valor de p" min="0">
+        </div>
 
-        <!-- Botão para calcular a combinação -->
         <button onclick="calcularCombinacao()">Calcular Combinação</button>
 
-        <!-- Área para exibir o resultado -->
         <div class="resultado" id="resultado"></div>
     </div>
 
-    <!-- Link para o arquivo JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>

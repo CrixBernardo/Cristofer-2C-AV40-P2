@@ -1,19 +1,96 @@
+/* Fonte e layout geral */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e6f1f7;
+}
+
+/* Container principal */
+.container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Cabeçalho */
+h1 {
+    font-size: 26px;
+    color: #005f73;
+    margin-bottom: 20px;
+}
+
+/* Texto introdutório */
+.intro-text {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Estilo dos campos de entrada */
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 48%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0099cc;
+    box-shadow: 0 0 10px rgba(0, 153, 204, 0.3);
+}
+
+/* Estilo do botão */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #008cba;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #005f73;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
 /* Estilo do resultado */
 .resultado {
     margin-top: 20px;
-    padding: 15px;
+    padding: 20px;
     font-size: 18px;
     font-weight: bold;
     color: #333;
-    background-color: #e8f0fe;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: none; /* Inicialmente, oculto */
-    opacity: 0;
-    transition: opacity 0.5s ease;
+    background-color: #d0f0f9;
+    border-radius: 8px;
+    display: none;
+    transition: all 0.3s ease;
 }
 
 .resultado.show {
-    display: block;  /* Exibe a caixa */
-    opacity: 1;      /* Efeito de fade-in */
+    display: block;
+    opacity: 1;
 }
