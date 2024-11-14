@@ -1,27 +1,23 @@
 function calcularCombinacao() {
-    // Obtém os valores de n e p dos campos de entrada
     const n = parseInt(document.getElementById('n').value);
     const p = parseInt(document.getElementById('p').value);
+    const resultadoElemento = document.getElementById('resultado');
 
     // Validação dos valores
     if (isNaN(n) || isNaN(p) || n < 0 || p < 0 || p > n) {
-        document.getElementById('resultado').innerText = "Por favor, insira valores válidos para n e p (p ≤ n).";
+        resultadoElemento.innerText = "Por favor, insira valores válidos para n e p (p ≤ n).";
+        resultadoElemento.style.color = "#e63946";
+        resultadoElemento.classList.add("show");
         return;
     }
 
-    // Função para calcular o fatorial de um número
     function fatorial(x) {
-        if (x === 0 || x === 1) return 1;
-        let resultado = 1;
-        for (let i = 2; i <= x; i++) {
-            resultado *= i;
-        }
-        return resultado;
+        return x <= 1 ? 1 : x * fatorial(x - 1);
     }
 
-    // Calcula a combinação C(n, p)
     const combinacao = fatorial(n) / (fatorial(p) * fatorial(n - p));
 
-    // Exibe o resultado
-    document.getElementById('resultado').innerText = `C(${n}, ${p}) = ${combinacao}`;
+    resultadoElemento.innerText = `C(${n}, ${p}) = ${combinacao}`;
+    resultadoElemento.style.color = "#333";
+    resultadoElemento.classList.add("show");
 }
